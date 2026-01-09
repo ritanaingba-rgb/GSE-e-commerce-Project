@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage User</title>
+  <link rel="stylesheet" href="manage-user.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+</head>
+<body>
+
+<!-- Top Bar -->
+<header class="manage-header">
+  <i class="fas fa-arrow-left"></i>
+  <h2>Manage User</h2>
+  <i class="fas fa-ellipsis-h"></i>
+</header>
+
+<!-- User Info -->
+<section class="user-info">
+  <img src="https://i.pravatar.cc/100" alt="User">
+  <div>
+    <h3>David Jackson</h3>
+    <p>@Dee_Jack69</p>
+    <span class="badge suspended">
+      <i class="fas fa-ban"></i> Suspended
+    </span>
+  </div>
+</section>
+
+<!-- Menu List -->
+<section class="menu-list">
+  <div class="menu-item">User Activity <i class="fas fa-chevron-right"></i></div>
+  <div class="menu-item">Reports <i class="fas fa-chevron-right"></i></div>
+  <div class="menu-item">Suspension History <i class="fas fa-chevron-right"></i></div>
+  <div class="menu-item">Account Details <i class="fas fa-chevron-right"></i></div>
+</section>
+
+<!-- Suspension Section -->
+<section class="suspend-box">
+  <h3>Suspend User</h3>
+
+  <label>Reason</label>
+  <select>
+    <option>Policy Violation</option>
+    <option>Spam</option>
+    <option>Harassment</option>
+  </select>
+
+  <label>Duration</label>
+  <div class="duration">
+    <button>24 Hours</button>
+    <button class="active"><i class="fas fa-check"></i> 7 Days</button>
+    <button>Permanent</button>
+  </div>
+
+  <textarea placeholder="Add a note (Optional)"></textarea>
+
+  <div class="actions">
+    <button class="cancel">Cancel</button>
+    <button class="confirm">Confirm Suspension</button>
+  </div>
+</section>
+
+<!-- Bottom Actions -->
+<section class="bottom-actions">
+  <button class="danger">
+    <i class="fas fa-exclamation-circle"></i> Suspend
+  </button>
+
+  <button class="success">
+    <i class="fas fa-check-circle"></i> Unsuspend
+  </button>
+</section>
+
+</body>
+</html>

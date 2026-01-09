@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Moderation Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- FULL WIDTH HEADER -->
+  <header class="top-header">
+    <div>
+      <h2>Admin / Moderation</h2>
+      <span>Hidden – Staff Only</span>
+    </div>
+
+    <div class="profile-icon">
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </header>
+
+  <!-- PAGE WRAPPER -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="nav">
+        <li class="nav-item">
+          <i class="fas fa-th"></i>
+          Dashboard Overview
+        </li>
+
+        <li class="nav-item active">
+          <i class="fas fa-shield-alt"></i>
+          Content Moderation Queue
+        </li>
+
+        <li class="nav-item">
+          <i class="fas fa-user-slash"></i>
+          User Suspension / Ban Tool
+        </li>
+
+        <li class="nav-item">
+          <i class="fas fa-book-open"></i>
+          Reports & Logs
+        </li>
+
+        <li class="nav-item">
+          <i class="fas fa-cog"></i>
+          System Settings
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="content-header">
+        <h1>Welcome, Ayanakoji Midoriya</h1>
+        <div class="stats">
+          <span>Pending Reports: <strong>69</strong></span>
+          <span>Active users: <strong>4,019</strong></span>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">
+            <i class="fas fa-shield-alt"></i>
+            Moderation Queue
+          </div>
+          <p class="number">88</p>
+          <span>Items to Review</span>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fas fa-minus-circle"></i>
+            Suspension Requests
+          </div>
+          <p class="number">5</p>
+          <span>Pending</span>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fas fa-bell"></i>
+            Security Alerts
+          </div>
+          <p class="number">9</p>
+          <span>New</span>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
